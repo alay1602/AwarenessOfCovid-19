@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>validation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</head>
+<body>
+
+
+
+
+
+<script>
+       function myValidation(){
+      var a=document.getElementById("Username").value;
+      var correct_way=/^[A-Za-z]+$/;
+       var b=document.getElementById("Password").value;
+
+
+      if(a==""){
+
+        document.getElementById("message").innerHTML="***please fill the username";
+        return false;
+      }
+       if(a.match(correct_way)){
+          
+           if(b==""){
+
+        document.getElementById("pass").innerHTML="***please fill the password";
+        return false;
+      }
+         if(b.length<5){
+
+        document.getElementById("pass").innerHTML="***password must be more then 5 character";
+        return false;
+      }
+ if(b.length>12){
+
+        document.getElementById("pass").innerHTML="***password must be less then 12 character";
+        return false;
+      }
+
+  
+        }
+        else
+        {
+         document.getElementById("message").innerHTML="***contain only alphabets";
+        return false;
+      }
+
+
+     
+       if(b==""){
+
+        document.getElementById("pass").innerHTML="***please fill the password";
+        return false;
+      }
+         if(b.length<5){
+
+        document.getElementById("pass").innerHTML="***password must be more then 5 character";
+        return false;
+      }
+           if(b.length>12){
+
+        document.getElementById("pass").innerHTML="***password must be less then 12 character";
+        return false;
+      }
+
+      
+
+
+
+       }
+     </script>
+
+
+
+
+
+
+<div class="container">
+<h1>Username and Pssword Validation</h1>
+
+<form onsubmit="return myValidation()">
+  <div class="form-group">
+    <label for="exampleInputUsername">Username</label>
+    <input type="text" class="form-control" id="Username"  placeholder="Enter Usrname"><span id="message"></span>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="Password" placeholder="Password"><span id="pass"></span>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+ <button type="reset" class="btn btn-primary">reset</button>
+</form>
+</div>
+</body>
+</html>

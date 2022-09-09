@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+  <style type="text/css">
+
+    body{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  	
+  	.col-md-3:hover{
+  		background-color: brown;
+
+  	}
+  	.head1{
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(0, 204, 255);
+  color: white;
+
+}
+.nav-link:hover,.active{
+  
+
+  text-decoration:underline gold;
+}
+.nav-link {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    
+  }
+   #login-dp{
+    min-width: 320px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+   
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+  .video-item {
+            
+            padding: 20px;
+            width: 33%;
+            height: 230px;
+        }
+  	
+
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#" style="color:white;">C<i class="fas fa-virus"></i>VID-19</a>
+  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html" style="color:white;">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#block-1" style="color:white;">VACCINATION STATUS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="vaccination.html" style="color:white;">VACINATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spred (1).html" style="color:white;">PREVENTION</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="refrenceforcovid.html" style="color:white;">WHY SETU</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="media.html" style="color:white;">MEDIA GALLARY</a>
+      </li>
+       <li class="nav-item dropdown">
+          <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;"><b>LOGIN</b> <span class="caret"></span></a>
+      <ul id="login-dp" class="dropdown-menu">
+        <li class="nav-item">
+           <div class="row">
+              <div class="col-md-12">
+                Login via
+                <div class="social-buttons">
+                  
+                  <a href="#" class="btn btn-tw"><i class="fab fa-twitter"></i> Twitter</a>
+                  <a href="#" class="btn btn-tw"><i class="fab fa-facebook"></i>facebook</a>
+                </div>
+                                or
+                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> keep me logged-in
+                       </label>
+                    </div>
+                 </form>
+              </div>
+              <div class="bottom text-center">
+                New here ? <a href="#"><b>Join Us</b></a>
+              </div>
+           </div>
+        </li>
+      </ul>
+        </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<br>
+
+<div class="container-fluid" style="margin-top: 30px;">
+   
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner pd-5">
+
+      <div class="item  mt-3 bg-dark text-center" style="padding: 20px;background-color: black;">
+        <div class="carousel-inner-1" style="padding: 50px;">
+        <h1 style="text-align: center;color: white;">"India is set to defeat
+Covid-19. Every Indian is making it possible."</h1>
+<p style="color: white;">-PM NARENDRA MODI</p>
+<div class="text-center">
+<a href="https://selfregistration.cowin.gov.in/" type="button" class="btn btn-primary" style="margin:5px;">BOOK SLOT</a>
+<a href="https://selfregistration.cowin.gov.in/"  type="button"class="btn btn-primary " style="margin: 5px;">Downlod Certificate</a>
+</div>
+</div>
+</div>
+
+        
+
+
+      <div class="item  mt-3 "  style="padding: 20px;background-image:url(https://i.ytimg.com/vi/lBbAm1U3jIQ/maxresdefault.jpg)no-repeat;background-color: black; ">
+        <div class="carousel-inner-1" style="padding: 65px;">
+        <h1 style="text-align: center;color: white;">COWIN for the World</h1>
+        <p style="text-align:center; padding: 2px;color: white;">Launching CoWIN as an open source platform for countries to orchestrate successful vaccination with efficient monitoring with an aim of achieving universal vaccination</p>
+        
+      </div>
+    
+      
+    </div>
+
+   
+  </div>
+</div>
+
+
+
+
+    <div class="container-fluid" id="block-1">
+      <h1 style="text-align: center;font-weight: bold;">Vaccination Status</h1>
+       
+      <marquee>
+         <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">ANDAMAN NICOBAR<span style="margin-left: 10px;">7,624</span>
+         </span>       
+
+
+
+        <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Andhra Pradesh<span style="margin-left: 10px;">20,53,193</span>
+         </span>    
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Arunachal Pradesh<span style="margin-left: 10px;">54,792</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Assam<span style="margin-left: 10px;">6,03,238</span>
+         </span>  
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Bihar<span style="margin-left: 10px;">7,25,971</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Chandigarh<span style="margin-left: 10px;">65,243</span>
+         </span>  
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Chhattisgarh<span style="margin-left: 10px;">10,05,412</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Dadra Nagar Haveli AndDaman and Diu<span style="margin-left: 10px;">10,673</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Delhi<span style="margin-left: 10px;">14,39,000</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Goa<span style="margin-left: 10px;">1,76,681</span>
+         </span>  
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Gujarat<span style="margin-left: 10px;">8,26,016</span>
+         </span>  
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Hariyana<span style="margin-left: 10px;">7,70,924</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Himachal pradesh<span style="margin-left: 10px;">2,19,591</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Jammu Kashmir<span style="margin-left: 10px;">3,29,890</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Jharkhand<span style="margin-left: 10px;">3,48,272</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Karnataka<span style="margin-left: 10px;">29,78,286</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Kerala<span style="margin-left: 10px;">47,29,056</span>
+         </span>   
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">MAHARASTRA<span style="margin-left: 10px;">65,63,580</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Madhya Pradesh<span style="margin-left: 10px;">7,92,570</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Manipur<span style="margin-left: 10px;">1,21,146</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Meghalaya<span style="margin-left: 10px;">81,859</span>
+         </span> 
+          <span id="" style="margin-left: 10px;background-color: #E8E8E8;border-radius: 10px;padding: 5px;">Odisha<span style="margin-left: 10px;">10,28,366</span>
+         </span>       
+
+      
+
+      
+
+      
+
+      
+
+    
+
+      
+
+      
+
+      
+
+      
+
+  
+      </marquee>
+
+  
+
+      <div class="row ">
+
+        <div class="col-md-4 lg-4 sm-11 mt-3 mx-auto" style="">
+          <div class="vaccination-block shadow  " style="box-sizing: border-box;width: 95%;background-color:#e6e6fa;padding: 5px;border-radius: 10px;font-weight: bold;">
+          <div class="vaccination-header d-flex justify-content-between " style="padding: 5px;">
+          <p>VACCINATION DOSE STATUS</p>
+          <P>STATEWISE</P>
+        </div>
+        <div class="text-center mt-3   mx-auto" style="text-align: center;width: 40%;height:auto;border: 1px solid purple;border-radius: 10px;
+        padding: 3px;font-weight: bold;color: purple;">
+          <p >22,02,626</p>
+           <hr style="width: 80%;color: black;" />
+          <p style="color: black;">VACCINATION LIVE</p>
+          
+        </div>
+        <div class="vaccination-data" style="padding: 3px;">
+          <p>VACCINATION DAY'S BEFORE</p>
+          <p>65,86,092</p>
+          <p>TOTAL VACCINATION DOSES</p>
+          <p>95,89,78,049</p>
+        </div>
+      </div>
+
+
+        </div>
+
+        <div class="col-md-4 gx-3 mt-3 mx-auto" style="">
+
+          <div class="vaccination-block shadow  " style="box-sizing: border-box;width: 95%;background-color:#dda0dd;padding: 5px;border-radius: 10px;font-weight: bold;">
+          <div class="vaccination-header d-flex justify-content-between " style="padding: 5px;">
+          <p>SARS-COV-2</p>
+          
+        </div>
+        <div class="text-center mt-3   mx-auto" style="text-align: center;width: 40%;height:auto;border: 1px solid purple;border-radius: 10px;
+        padding: 3px;font-weight: bold;color: purple;">
+          <p >11,81,766</p>
+           <hr style="width: 80%;color: black;" />
+          <p style="color: black;">SAMPLE TEST ON OCT</p>
+          
+        </div>
+        <div class="vaccination-data" style="padding: 3px;">
+          <p>TESTING STATUS UP TO</p>
+          <p>OCT 2021</p>
+          <p>TOTAL SAMPLES CASE</p>
+          <p>58,50,38,043</p>
+        </div>
+      </div>
+
+
+        </div>
+          <div class="col-md-4 gx-3 mt-3 mx-auto" style="">
+          <div class="vaccination-block shadow  " style="box-sizing: border-box;width: 95%;background-color:#FFCC99;padding: 5px;border-radius: 10px;font-weight: bold;">
+          <div class="vaccination-header d-flex justify-content-between " style="padding: 5px;">
+          <p>CASES ACROSS INDIA</p>
+          <P>STATEWISE</P>
+        </div>
+        <div class="text-center mt-3   mx-auto" style="text-align: center;width: 40%;height:auto;border: 1px solid purple;border-radius: 10px;
+        padding: 3px;font-weight: bold;color: purple;">
+          <p >2,14,626</p>
+           <hr style="width: 80%;color: black;" />
+          <p style="color: black;">ACTIVE CASES IN INDIA </p>
+          
+        </div>
+        <div class="vaccination-data" style="padding: 3px;">
+          <p>TOTAL CASES</p>
+          <p>3,39,85,920</p>
+          <p> TOTAL DEATHS</p>
+          <p>4,50,963</p>
+        </div>
+      </div>
+
+
+        </div>
+
+        
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+     
+
+    
+
+
+     <div class="container-fluid" style="margin-top: 30px;">
+     	<div class="container-model"id="block-2" style="background: black;padding: 30px;">
+     		<div class="row" style="padding: 10px;">
+
+     			<div class="col-md-8 " style="padding: 10px;">
+     				<div class="container-model-item" style="margin-top: 20px;">
+     					<h1 style="width: 80%;color: white;">For Information On Covid<span style="color: gold;"> Vaccine</span></h1>
+     					<div class="row" style="">
+     						<div class="col-md-3 sm-11 xs-6" style="border: 1px solid;padding: 20px;margin-left: 5px;">
+     							<div class="model-1" style="padding: 5px; font-weight: bold;color: white;">
+     							<p><a href="https://static.mygov.in/rest/s3fs-public/mygov_161960430051307401.pdf" style="list-style: none;color: white;">Frequntly Asked Quetions On Cowin(PDF-156Kb)</a></p>
+     						</div>
+     						</div>
+     						<div class="col-md-3 sm-11 xs-6" style="border: 1px solid;padding: 20px;margin-left: 5px;">
+     							<div class="model-1" style="padding: 5px; font-weight: bold;color: white;">
+     							<p><a href="https://static.mygov.in/rest/s3fs-public/mygov_163108308853877021.pdf" style="list-style: none;color: white;">Know How To Book Your Appointment</a></p>
+     						</div>
+     						</div>
+     						<div class="col-md-3 sm-11 xs-6" style="border: 1px solid;padding: 20px;margin-left: 5px;">
+     							<div class="model-1" style="padding: 5px; font-weight: bold;color: white;">
+     							<p><a href="https://static.mygov.in/rest/s3fs-public/mygov_161960438951307401.pdf"style="list-style: none;color: white;">Do's and Don't</a></p>
+     						</div>
+     						</div>
+
+
+     					</div>
+
+     				</div>
+
+     			</div>
+
+     			<div class="col-md-4 sm-11" style="padding: 30px;">
+     				<div class="container-model-item">
+     					<div class="row">
+     					 <div class="video-item" style=""><iframe class="item1" src="https://www.youtube.com/embed/ICyGokyR0jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+     					</div>
+
+     				</div>
+
+     				
+     			</div>
+
+
+     		</div>
+
+
+
+     	</div>
+
+
+
+     </div>
+
+   <div class="container-fluid">
+   	<div class="container-section" style="padding: 50px;">
+   		<h1>Getting vaccinated is as easier than ever</h1>
+   		<div class="container-section-1" style="padding: 10px;">
+   		<div class="row">
+
+   			<div class="col-md-4">
+   				<h1 style="text-align: center;"><span class="badge badge-light" style="border: 1px solid;border-radius: 40px;">1</span></h1></h1>
+   				<h4 style="text-align: center;">Book An Appointment On CoWIN or Walk Into Any Vaccination center</h4>
+   				<img src="https://www.cowin.gov.in/assets/images/vaccinated_img1.png" style="width: 100%;"></img>
+   				<p><b><a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18%2B.pdf" style="color: purple;" >How To Book Your Appointment On CoWIN</a></b></p>
+
+   			</div>
+            
+            <div class="col-md-4">
+               <h1 style="text-align: center;"><span class="badge badge-light" style="border: 1px solid;border-radius: 40px;">2</span></h1>
+   				<h4 style="text-align: center;">Get Your Vaccination Safely at the Time of Your Appointment</h4>
+   				<img src="https://www.cowin.gov.in/assets/images/vaccinated_img1.png" style="width: 100%;"></img>
+   				<p><b><a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf" style="color: purple;">Dos And Dont's For Getting Vaccinated</a></b></p>
+
+   			</div>
+  
+            <div class="col-md-4">
+            	<h1 style="text-align: center;"><span class="badge badge-light" style="border: 1px solid;border-radius: 40px;">3</span></h1>
+   				<h4 style="text-align: center;">Download Your Vaccination Certificate from CoWIN and Wait for Dose #2</h4>
+   				<img src="https://www.cowin.gov.in/assets/images/vaccinated_img1.png" style="width: 100%;"></img>
+   				<p><b><a href="https://selfregistration.cowin.gov.in/" style="color: purple;">Dos And Dont's For Getting Vaccinated</a></b></p>
+
+   			</div>
+
+   			
+   		</div>
+   	</div>
+
+
+   	<div class="center" style="margin-top: 10px;"  id="block-3">
+  
+  <div class="head1">Frequently Asked Questions</div>
+  <div id="accordion">
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          How many people can be registered in the CoWIN portal through one mobile number?
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Up to 4 people can be registered for vaccination using the same mobile number.
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          Can I register for vaccination without Aadhaar card?
+
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p> Yes, you can register on CoWIN portal using any of the following ID proofs:</p>
+          	<ul style="list-style: none;">
+<li>a. Aadhaar card</li>
+<li>b. Driving License</li>
+<li>c. PAN card</li>
+<li>d. Passport</li>
+<li>e. Pension Passbook</li>
+<li>f. NPR Smart Card</li>
+<li>g. Voter ID (EPIC)</li>
+<li>h. Unique Disability ID (UDID)</li>
+<li>i. Ration Card </li>
+</ul>
+          
+        
+          </span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Is there any registration charges to be paid?
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+           <p>No. There is no registration charge.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+          Where can I register for COVID-19 vaccination?
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <p>You can log into the CoWIN portal using the link www.cowin.gov.in and click on the “Register/Sign In yourself” tab to register for COVID-19 vaccination  </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+          Is there a mobile app that needs to be installed to register for vaccination?
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>There is no authorised mobile app for registering for vaccination in India except Aarogya Setu. You need to log into the CoWIN portal. Alternatively, you can also register for vaccination through the Aarogya Setu App and Umang app.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+          Is online registration mandatory for Covid 19 vaccination?
+        </a>
+      </div>
+      <div id="collapseSix" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>Vaccination centers provide for a limited number of on-spot registration slots every day. Beneficiaries aged 45 years and above can schedule appointments online or walk-in to vaccination centers. Beneficiaries aged 18 years and above can schedule appointments online or walk-in to Government vaccination centers. However, beneficiaries aged 18-44 years should mandatorily register themselves and schedule appointment online before going to a Private vaccination center.</p>
+
+          <p>In general, all beneficiaries are recommended to register online and schedule vaccination in advance for a hassle-free vaccination experience.</p>
+          
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+          Where will I receive confirmation of date and time of vaccination?
+        </a>
+      </div>
+      <div id="collapseSeven" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>Once an appointment is scheduled, you will receive the details of the vaccination center, date and time slot chosen for appointment in an SMS sent to your registered mobile number. You can also download the appointment slip and print it or keep it on your smart phone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+          Can I download appointment slip?
+        </a>
+      </div>
+      <div id="collapseEight" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>Can I download appointment slip?</p>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseEleven">
+          REGISTRATION
+        </a>
+      </div>
+      <div id="collapseEleven" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>1. Where can I register for COVID-19 vaccination?<br>
+You can log into the Co-WIN portal using the link www.cowin.gov.in and click on the “Register/Sign In yourself” tab to register for COVID-19 vaccination.</p>
+          <p>2. Is there a mobile app that needs to be installed to register for vaccination?<br>
+There is no authorised mobile app for registering for vaccination in India. You need to log into the Co-WIN portal. You can also register for vaccination through the Aarogya Setu App.</p>
+          <p>3. Which age groups can register for vaccination on the Co-WIN portal?<br>
+At present, all citizens above 45 years of age can register for vaccination.</p>
+          <p>4. Is online registration mandatory for Covid 19 vaccination?<br>
+No. Vaccination Centres provide for a limited number of on-spot registration slots every day. However, it is recommended to register online and schedule vaccination in advance for a have hassle-free vaccination experience.</p>
+          <p>5. How many people can be registered in the Co-WIN portal through one mobile number?<br>
+Up to 4 people can be registered for vaccination using the same mobile number.</p>
+          <p>6. How can citizens with no access to smart phones or computers manage online registration?<br>
+Up to 4 people can be registered for vaccination using the same mobile number. Citizens can take help from friends or family for online registration. Facility for on-spot registration is also available.</p>
+          <p>7. Can I register for vaccination without Aadhaar card?<br>
+Yes, you can register on Co-WIN portal using any of the following ID proofs: a. Aadhaar card b. Driving License c. PAN card d. Passport e. Pension Passbook f. NPR Smart Card g. Voter ID (EPIC)</p>
+        </div>
+      </div>
+    </div>
+ <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+           SCHEDULING APPOINTMENT
+        </a>
+      </div>
+      <div id="collapseNine" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>1. Can I book an appointment for vaccination in the Co-WIN portal?<br>
+Yes, you can book appointment for vaccination through Co-WIN portal after logging-in to the Co-WIN Portal through your registered mobile number.</p>
+          <p>2. What are the options if one citizen is aged 45 or above and other is aged 18 or above?<br>
+If one citizen is aged 45 or above and other citizen is aged 18 to 44 years and both want to schedule a combined appointment, then only private paid vaccination centres or vaccination centres as per State’s policy will be made available. However, it may happen that some hospitals which are catering to people with 45 years or more may not allow the booking of appointments for people with lesser age. In that case you may make bookings one by one.</p>
+         <p>3. Can I check the vaccine being administered at each vaccination centre?<br>
+Yes, while scheduling an appointment for vaccination, the system will show vaccination centre names along with the name of the vaccine that will be administered in case of private hospitals. Government hospitals may not show the name of the vaccine.</p>
+         <p>6. What if I cannot go for vaccination on the date of appointment? Can I reschedule my appointment?<br>
+The appointment can be rescheduled at any time. In case you do not go for vaccination on the date of appointment, you can reschedule the appointment by clicking on “Reschedule” tab.</p>
+         <p>8. Where will I receive confirmation of date and time of vaccination?<br>
+Once an appointment is scheduled, you will receive the details of the vaccination centre, date and time slot chosen for appointment in an SMS sent to your registered mobile number. You can also download the appointment slip and print it or keep it on your smart phone.</p>
+        </div>
+      </div>
+    </div>
+ <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+          VACCINATION
+        </a>
+      </div>
+      <div id="collapseTen" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>1. Is vaccination free at all vaccination centres?<br>
+No. Vaccination is free at Government hospitals and charged up to INR 250 per dose in Private hospitals. Citizens can get this information on the Co-WIN portal while booking an appointment.</p>
+          <p>2. Can I check the price of the vaccine?<br>
+Yes. The System will show the price of the vaccine below the name of the vaccination centre at the time of scheduling an appointment.</p>
+          <p>3. Can I choose the vaccine?<br>
+System will show the vaccine being administered in each vaccination centre at the time of scheduling an appointment. Citizen can choose the vaccination centre as per their choice of vaccine being administered However, the choice will not be available at the Government facilities .</p>
+         <p>4. What precautions should I take at the time of 2nd dose vaccination?<br>
+The Vaccination Centres have been directed to ensure that if a citizen is being vaccinated with 2nd dose, they should confirm that the first dose vaccination was done with the same vaccine as is being offered at the time of second dose and that the first dose was administered more than 28 days ago. You should share the correct information about the vaccine type and the date of 1st dose vaccination with the vaccinator. You should carry your vaccine certificate issued after the first dose.</p>
+         <p>5. Can I get vaccinated with 2nd dose in a different State/District?<br>
+Yes, you can get vaccinated in any State/District. The only restriction is that you will be able to get vaccinated only on those centres which are offering the same vaccine as was administered to you on your first dose.</p>
+         <p>6. I have registered myself on Co-Win portal. However, I am not able to make any booking as I do not see any vaccination facility near my location? What should I do?<br>
+Yes, it is possible that no facility near your place has published their vaccination program as yet. You may wait for some time till vaccination facilities near your place are onboarded on Co-Win platform, become active and start their services.</p>
+        </div>
+
+      </div>
+    </div>
+
+   
+  
+  </div>
+</div>
+
+
+       </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<footer class="page-footer font-small mt-3" style="background-color: #000033;">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 text-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-inverse" style="color: white;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">awarnessofcovid.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+</body>
+</html>

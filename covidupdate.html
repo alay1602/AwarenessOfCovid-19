@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID UPDATE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+
+  <style type="text/css">
+  	
+  *{
+  	padding: 0px;
+  	margin: 0px;
+  }
+  body{
+  	
+  	background-image: url("https://www.aarogyasetu.gov.in/wp-content/themes/setu/assets/images/graph_bg.png");
+  }
+  .coviddata{
+  	
+  	padding: 10px;
+  	
+ 	
+ 
+
+  }
+  .block{
+  	margin-left: 70px;
+  }
+  .text-block{
+  	text-align: center;
+  	padding: 10px;
+
+  }
+  .container{
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 1px 2px 3px 3px;
+    padding: 30px;
+    text-align: center;
+
+  }
+  .container-fluid{
+   margin: 10px;
+   padding: 10px;
+
+
+
+  }
+  </style>
+</head>
+<body>
+	<div class="container-fluid">
+       
+            <h1 style="text-align: center;">COVID DATA ACROSS IN INDIA</h1>
+
+        <div class="container">
+        	<div class="block">
+
+        	<div class="row">
+        		<div class="col-md-3" style="background-color: purple;margin: 10px;padding: 5px;">
+        			<div class="text-block">
+        			<h4>NEW CONFIRMED CASE</h4>
+        			<h3 id="newconfirmed"></h3>
+        		</div>
+
+        		</div>
+        		<div class="col-md-3" style="background-color: purple;margin: 10px;padding: 5px;">
+        			<div class="text-block">
+        			<h4>TOTAL CONFIRMED</h4>
+        			<h3 id="totalconfirmed"></h3>
+        		</div>
+
+        		</div>
+        		<div class="col-md-3"  style="background-color: purple;margin: 10px;padding: 5px;">
+        			<div class="text-block">
+        			<h4>NEW DEATH</h4>
+        			<h3 id="newdeath"></h3>
+                    </div>
+        		</div>
+
+
+
+        	</div>
+        	<br>
+      
+     <div class="row">
+        		<div class="col-md-3" style="background-color: purple;margin: 10px;padding: 5px;">
+        			<div class="text-block">
+        			<h4>TOTAL DEATH</h4>
+        			<h3 id="totaldeath"></h3>
+        		</div>
+
+        		</div>
+        		<div class="col-md-3" style="background-color: purple;margin: 10px;padding: 5px;">
+        			<div class="text-block">
+        			<h4>NEW RECOVER</h4>
+        			<h3 id="newrecover"></h3>
+        		</div>
+
+        		</div>
+        		<div class="col-md-3"  style="background-color: purple;margin: 10px;padding: 5px;">
+        			<div class="text-block">
+        			<h4>TOTAL RECOVER</h4>
+        			<h3 id="totalrecover"></h3>
+        		</div>
+
+        		</div>
+
+
+
+        	</div>
+        </div>
+
+              <div class="statedata">
+              	<h3><a href="#">Full State Wise Data</a></h3>
+
+              </div>
+
+        </div>
+
+	</div>
+
+
+
+
+
+	<script>
+		fetch("https://api.covid19api.com/summary").then( (apidata)=>{
+			//console.log(apidata);
+			return apidata.json();
+		}).then((coviddata)=>{
+
+			const updatedata=coviddata.statewise[11].active;
+			document.getElementById("newconfirmed").innerHTML=updatedata;
+			const updatedata1=coviddata.statewise[11].confirmed;
+			document.getElementById("totalconfirmed").innerHTML=updatedata1;
+			const updatedata2=coviddata.statewise[11].deaths;
+			document.getElementById("newdeath").innerHTML=updatedata2;
+				const updatedata3=coviddata.statewise[11].recovered;
+			document.getElementById("totaldeath").innerHTML=updatedata3;
+			const updatedata4=coviddata.statewise[11].deltaconfirmed;
+			document.getElementById("newrecover").innerHTML=updatedata4;
+
+            const updatedata5=coviddata.statewise[11].deltarecovered;
+			document.getElementById("totalrecover").innerHTML=updatedata5;
+
+			 const updatedata6=coviddata.statewise[11].deltadeaths;
+			document.getElementById("date").innerHTML=updatedata6;
+
+
+
+
+
+		}).catch((error)=>{
+
+			console.log(error);
+		});
+
+
+
+
+	</script>
+
+</body>
+</html>

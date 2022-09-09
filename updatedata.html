@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>upadate</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+  <style type="text/css">
+    
+     .nav-link {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    
+  }
+  </style>
+ 
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#">C<i class="fas fa-virus"></i>VID-19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CORONA UPDATE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">VACINATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PREVENTION</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">WHY SETU</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MEDIA GALLARY</a>
+      </li>
+       <li class="nav-item dropdown">
+          <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown"><b>LOGIN</b> <span class="caret"></span></a>
+      <ul id="login-dp" class="dropdown-menu">
+        <li class="nav-item">
+           <div class="row">
+              <div class="col-md-12">
+                Login via
+                <div class="social-buttons">
+                  
+                  <a href="#" class="btn btn-tw"><i class="fab fa-twitter"></i> Twitter</a>
+                  <a href="#" class="btn btn-tw"><i class="fab fa-facebook"></i>facebook</a>
+                </div>
+                                or
+                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> keep me logged-in
+                       </label>
+                    </div>
+                 </form>
+              </div>
+              <div class="bottom text-center">
+                New here ? <a href="#"><b>Join Us</b></a>
+              </div>
+           </div>
+        </li>
+      </ul>
+        </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+ <div class="covid-detail p-3 bg-dark">
+      <div class="container-fluid p-3">
+      
+
+            <h1 style="text-align: center;color: white;">COVID-19 DATA ACROSS IN INDIA</h1>
+           <h3 style="text-align: center;color: white;"> <span id="detail">LAST UPDATE:</span></h3>
+             <h3 id="date"style="text-align: center;color: white;"></h3>
+        <div class="row">
+          <div class="col-sm-4" style="padding: 10px;" >
+            <div class="covid-data "style="width: 90%;background-color: rgb(0, 0, 255);text-align: center;padding: 5px;">
+              <h3><i class="fas fa-virus"></i>ACTIVE CASE</h3>
+              <h4 id="newconfirmed"></h4>
+
+
+            </div>
+
+
+          </div>
+          <div class="col-sm-4" style="padding: 10px;" >
+            <div class="covid-data"style="width: 90%;background-color: rgb(255, 165, 0);text-align: center;padding: 5px;">
+              <h3><i class="fas fa-virus"></i>TOTAL CONFIRMED CASE</h3>
+              <h4 id="totalconfirmed"></h4>
+
+
+            </div>
+
+
+          </div>
+          <div class="col-sm-4" style="padding: 10px;" >
+            <div class="covid-data"style="width: 90%; background-color: rgb(60, 179, 113);text-align: center;padding: 5px;">
+              <h3><i class="fas fa-virus"></i>NEW DEATH</h3>
+              <h4 id="newdeath"></h4>
+
+
+            </div>
+
+
+          </div>
+
+
+         </div>
+
+
+
+<div class="row">
+          <div class="col-sm-4"  style="padding: 10px;">
+            <div class="covid-data"style="width: 90%;background-color: rgb(255, 99, 71);text-align: center;padding: 5px;">
+              <h3><i class="fas fa-virus"></i>TOTAL DEATH</h3>
+              <h4 id="totaldeath"></h4>
+
+
+            </div>
+
+
+          </div>
+          <div class="col-sm-4"  style="padding: 10px;">
+            <div class="covid-data"style="width: 90%;background-color: rgb(238, 130, 238);text-align: center;padding: 5px;">
+              <h3><i class="fas fa-virus"></i>NEW RECOVER</h3>
+              <h4 id="newrecover"></h4>
+
+
+            </div>
+
+
+          </div>
+          <div class="col-sm-4"  style="padding: 10px;">
+            <div class="covid-data"style="width: 90%;background-color: rgb(255, 0, 0);text-align: center;padding: 10px;">
+              <h3><i class="fas fa-virus"></i>TOTAL RECOVER</h3>
+              <h4 id="totalrecover"></h4>
+
+
+            </div>
+
+
+          </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+ </div>
+</div>
+
+
+ <!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer font-small mt-3" style="background-color: #000033;">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 text-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-inverse" style="color: white;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+	<script>
+    fetch("https://data.covid19india.org/data.json").then( (apidata)=>{
+      //console.log(apidata);
+      return apidata.json();
+    }).then((coviddata)=>{
+      console.log(coviddata);
+       const data=coviddata.statewise[11].active;
+      document.getElementById("newconfirmed").innerHTML=data;
+      const data1=coviddata.Countries[76].TotalConfirmed;
+      document.getElementById("totalconfirmed").innerHTML=data1;
+      const data2=coviddata.Countries[76].NewDeaths;
+      document.getElementById("newdeath").innerHTML=data2;
+        const data3=coviddata.Countries[76].TotalDeaths;
+      document.getElementById("totaldeath").innerHTML=data3;
+      const data4=coviddata.Countries[76].NewRecovered;
+      document.getElementById("newrecover").innerHTML=data4;
+
+            const updatedata5=coviddata.Countries[76].TotalRecovered;
+      document.getElementById("totalrecover").innerHTML=updatedata5;
+
+       const updatedata6=coviddata.Countries[76].Date;
+      document.getElementById("date").innerHTML=updatedata6;
+
+
+
+
+      
+
+
+
+    }).catch((error)=>{
+
+      console.log(error);
+    });
+
+
+
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <title>media galary</title>
+    <style>
+        body {
+
+            background-image: url("https://www.aarogyasetu.gov.in/wp-content/themes/setu/assets/images/graph_bg.png");
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            display: flexbox;
+            padding: 20px;
+            width: 33%;
+            height: 230px;
+        }
+
+        .item1 {
+            width: 100%;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .article{
+            padding: 20px;
+            width: 48%;
+            height: auto;
+            border: 2px solid black;
+            margin: 8px;
+        }
+        .article1{
+            width: 100%;
+            height: auto;
+           
+        }
+
+        @media only screen and (max-width: 900px) {
+            .item {
+                width: 49%;
+                height: 230px;
+                padding: 10px;
+
+            }
+        }
+        @media only screen and (max-width: 660px) {
+            .article {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+
+            }
+        }
+        @media only screen and (max-width: 460px) {
+            .item {
+                width: 100%;
+                height: 230px;
+                padding: 10px;
+
+            }
+        }
+
+        @media (max-width:980px){
+            body{
+                width: 980px;
+                 }
+        }
+
+         @media (max-width:700px){
+            body{
+                width: 700px;
+                 }
+        }
+
+        .heading1 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            background-color: rgb(0, 225, 255);
+        }
+        .heading2 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            background-color: rgb(0, 225, 255);
+            margin-top: 40px;
+        }
+        .nav-link:hover,.active{
+  
+
+  text-decoration:underline gold;
+}
+.nav-link {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    
+  }
+   #login-dp{
+    min-width: 320px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+   
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media (max-width: 400px){
+    body{
+        width: 400px;
+    }
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#" style="color:white;">C<i class="fas fa-virus"></i>VID-19</a>
+  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html" style="color:white;">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2" style="color:white;">CORONA UPDATE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vaccination.html" style="color:white;">VACINATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spred (1).html" style="color:white;">PREVENTION</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="refrenceforcovid.html" style="color:white;">WHY SETU</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="media.html" style="color:white;">MEDIA GALLARY</a>
+      </li>
+       <li class="nav-item dropdown">
+          <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown" style="color:white;"><b>LOGIN</b> <span class="caret"></span></a>
+      <ul id="login-dp" class="dropdown-menu">
+        <li class="nav-item">
+           <div class="row">
+              <div class="col-md-12">
+                Login via
+                <div class="social-buttons">
+                  
+                  <a href="#" class="btn btn-tw"><i class="fab fa-twitter"></i> Twitter</a>
+                  <a href="#" class="btn btn-tw"><i class="fab fa-facebook"></i>facebook</a>
+                </div>
+                                or
+                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> keep me logged-in
+                       </label>
+                    </div>
+                 </form>
+              </div>
+              <div class="bottom text-center">
+                New here ? <a href="#"><b>Join Us</b></a>
+              </div>
+           </div>
+        </li>
+      </ul>
+        </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<br>
+
+
+  </div>
+    <div class="container  p-3" style="margin-top: 15px;">
+        <div class="heading1">
+            This is some usefull video for covid awarness
+        </div>
+        <div class="flex-container">
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/ICyGokyR0jM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/1opeJ_kMRpU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/joGu7ZwrY20"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/1lFzN_94Q7M"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/jyb_KeZ33bI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/_qphtc0KueM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/N-DC5vkql40"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/pgoupAJXexs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/4D8OFg37GlE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/CQ4ZBPM9W-4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/QGalaLjjSWs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe class="item1" src="https://www.youtube.com/embed/_NKvJ43XBkY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+
+        </div>
+        <div class="heading2">
+            This is some usefull article in covid 19
+        </div>
+        <div class="flex-container">
+            <div class="article">
+                <img class="article1"  src="https://www.who.int/images/default-source/health-topics/coronavirus/infographics/are-you-a-healthworker_8_3.png?sfvrsn=910144da_5" alt="">
+            </div>
+            <div class="article">
+                <img class="article1" src="https://indiabioscience.org/media/articles/covid19_com_hin.jpeg" alt="">
+            </div>
+            <div class="article">
+                <img class="article1" src="https://s.rfi.fr/media/display/24f5c41c-75c1-11ea-bb90-005056a964fe/coronavirus_kanuri_poster_prevention.jpg" alt="">
+            </div>
+            <div class="article">
+                <img class="article1" src="	https://cdn.s3waas.gov.in/s3248e844336797ec98478f85e7626de4a/uploads/2020/06/2020061166.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <footer class="page-footer font-small mt-3" style="background-color: #000033;">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 text-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-inverse" style="color: white;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">awarnessofcovid.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    
+
+</body>
+
+</html>
